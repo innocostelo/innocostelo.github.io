@@ -1,91 +1,83 @@
 *{
     margin: 0;
     padding: 0;
-    font font-family: sans-serif:
 }
 
-.hero{
-    position: relative;
+.main{
     width: 100%;
+    background: url(white.jpg);
+    background-position: center;
+    background-size: cover;
     height: 100vh;
-    background: #eff4efd;
+    position:relative;
+    font-family: sans-serif;
 }
 
-nav{
+.navbar{
+    width: 86%;
     display: flex;
-    width: 84%;
     margin: auto;
-    padding: 20px 0;
+    padding: 15px 0;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+.navbar .logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%;
+}
+    ul{
+        margin-top: -4%;
+    }
+
+    ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px 16px;
+    }
+
+    ul li a{
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: darkslategray;
+        margin: -3%;
+    }
+ul li a:hover{
+    color: rgb(red, green, blue)
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;   
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
 }
 
-nav ul li a:hover{
-    color: red;
+.info h1{
+    font-size: 65px;
+    color: rgb(red, green, blue);
 }
 
-.detel{
-    margin-left: 10%;
-    margin-top: 12%;
+.info h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
 } 
 
-.detel h1{
-    font-size: 50px;
-    color: #212121;
-    margin-bottom: 20px;
-}
-.detel p{
-    font-size: 50px;
-    color: #212121;
-    margin-bottom: 20px;
-}
-
-span{
-    color: orange;
-}
-
-.detel p{
-    color: #555;
-    line-height: 22px;
-}
-
-.detel a{
-      background: #212121;
-      padding: 10px 18px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #fff;
-      display: inline-block;
-      margin: 30px 0;
-      border-radius: 5px;
-} 
-
-.images{
-    width: 20%;
-    height: 30%;
+.image{
+    width: 30%;
+    height: 60%;
     position: absolute;
+    right: 100px;
     bottom: 0;
-    right: 30px;
+
 }
 
-images img{
-    height: 100px;
+.image img{
     position: absolute;
-    left: 20%;
-    bottom: 80%;
-    transform: translate(-100%);
-    transition: bottom 1s left 1s;
-
+    height: 120%;
+    left: 0;
+    transform: translate(-50%);
+    bottom: 0;
 }
